@@ -1,0 +1,541 @@
+In file included from /usr/include/c++/5/mutex:35:0,
+                 from /usr/include/uWS/Networking.h:59,
+                 from /usr/include/uWS/WebSocketProtocol.h:5,
+                 from /usr/include/uWS/WebSocket.h:4,
+                 from /usr/include/uWS/Group.h:4,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from /usr/include/uWS/WebSocketProtocol.h:5:0,
+                 from /usr/include/uWS/WebSocket.h:4,
+                 from /usr/include/uWS/Group.h:4,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Networking.h:70:10: error: ‘shared_ptr’ in namespace ‘std’ does not name a template type
+     std::shared_ptr<std::string> password;
+          ^
+/usr/include/uWS/Networking.h:67:20: error: constructor required before non-static data member for ‘uS::TLS::Context::context’ has been parsed
+ class WIN32_EXPORT Context {
+                    ^
+/usr/include/uWS/Networking.h:133:10: error: ‘mutex’ in namespace ‘std’ does not name a type
+     std::mutex *asyncMutex;
+          ^
+/usr/include/uWS/Networking.h:111:18: error: ‘nullptr’ was not declared in this scope
+     void *user = nullptr;
+                  ^
+/usr/include/uWS/Networking.h:116:25: error: ‘nullptr’ was not declared in this scope
+     uv_async_t *async = nullptr;
+                         ^
+/usr/include/uWS/Networking.h: In member function ‘char* uS::NodeData::getSmallMemoryBlock(int)’:
+/usr/include/uWS/Networking.h:145:31: error: ‘nullptr’ was not declared in this scope
+             preAlloc[index] = nullptr;
+                               ^
+/usr/include/uWS/Networking.h: At global scope:
+/usr/include/uWS/Networking.h:164:18: error: ‘nullptr’ was not declared in this scope
+     void *user = nullptr;
+                  ^
+/usr/include/uWS/Networking.h:178:36: error: ‘nullptr’ was not declared in this scope
+             Message *nextMessage = nullptr;
+                                    ^
+/usr/include/uWS/Networking.h:179:90: error: ‘nullptr’ was not declared in this scope
+             void (*callback)(void *socket, void *data, bool cancelled, void *reserved) = nullptr;
+                                                                                          ^
+/usr/include/uWS/Networking.h:180:34: error: ‘nullptr’ was not declared in this scope
+             void *callbackData = nullptr, *reserved = nullptr;
+                                  ^
+/usr/include/uWS/Networking.h:180:55: error: ‘nullptr’ was not declared in this scope
+             void *callbackData = nullptr, *reserved = nullptr;
+                                                       ^
+/usr/include/uWS/Networking.h:183:25: error: ‘nullptr’ was not declared in this scope
+         Message *head = nullptr, *tail = nullptr;
+                         ^
+/usr/include/uWS/Networking.h:183:42: error: ‘nullptr’ was not declared in this scope
+         Message *head = nullptr, *tail = nullptr;
+                                          ^
+/usr/include/uWS/Networking.h:212:23: error: ‘nullptr’ was not declared in this scope
+     uv_poll_t *next = nullptr, *prev = nullptr;
+                       ^
+/usr/include/uWS/Networking.h:212:40: error: ‘nullptr’ was not declared in this scope
+     uv_poll_t *next = nullptr, *prev = nullptr;
+                                        ^
+/usr/include/uWS/Networking.h: In member function ‘void uS::SocketData::Queue::pop()’:
+/usr/include/uWS/Networking.h:192:31: error: ‘nullptr’ was not declared in this scope
+                 head = tail = nullptr;
+                               ^
+/usr/include/uWS/Networking.h: In member function ‘bool uS::SocketData::Queue::empty()’:
+/usr/include/uWS/Networking.h:196:38: error: ‘nullptr’ was not declared in this scope
+         bool empty() {return head == nullptr;}
+                                      ^
+/usr/include/uWS/Networking.h: In member function ‘void uS::SocketData::Queue::push(uS::SocketData::Queue::Message*)’:
+/usr/include/uWS/Networking.h:201:36: error: ‘nullptr’ was not declared in this scope
+             message->nextMessage = nullptr;
+                                    ^
+/usr/include/uWS/Networking.h: At global scope:
+/usr/include/uWS/Networking.h:221:29: error: ‘nullptr’ was not declared in this scope
+     uv_poll_t *listenPoll = nullptr;
+                             ^
+/usr/include/uWS/Networking.h:222:31: error: ‘nullptr’ was not declared in this scope
+     uv_timer_t *listenTimer = nullptr;
+                               ^
+In file included from /usr/include/uWS/WebSocket.h:5:0,
+                 from /usr/include/uWS/Group.h:4,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Socket.h: In member function ‘void uS::Socket::transfer(uS::NodeData*, void (*)(uv_poll_t*))’:
+/usr/include/uWS/Socket.h:28:19: error: ‘struct uS::NodeData’ has no member named ‘asyncMutex’
+         nodeData->asyncMutex->lock();
+                   ^
+/usr/include/uWS/Socket.h:30:19: error: ‘struct uS::NodeData’ has no member named ‘asyncMutex’
+         nodeData->asyncMutex->unlock();
+                   ^
+/usr/include/uWS/Socket.h: In member function ‘void uS::Socket::cancelTimeout()’:
+/usr/include/uWS/Socket.h:163:37: error: ‘nullptr’ was not declared in this scope
+             getSocketData()->user = nullptr;
+                                     ^
+In file included from /usr/include/uWS/WebSocket.h:5:0,
+                 from /usr/include/uWS/Group.h:4,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Socket.h: In member function ‘uS::SocketData::Queue::Message* uS::Socket::allocMessage(size_t, const char*)’:
+/usr/include/uWS/Socket.h:349:35: error: ‘nullptr’ was not declared in this scope
+         messagePtr->nextMessage = nullptr;
+                                   ^
+/usr/include/uWS/Socket.h: In member function ‘void uS::Socket::changePoll(uS::SocketData*)’:
+/usr/include/uWS/Socket.h:364:35: error: ‘struct uS::NodeData’ has no member named ‘asyncMutex’
+             socketData->nodeData->asyncMutex->lock();
+                                   ^
+/usr/include/uWS/Socket.h:366:35: error: ‘struct uS::NodeData’ has no member named ‘asyncMutex’
+             socketData->nodeData->asyncMutex->unlock();
+                                   ^
+/usr/include/uWS/Socket.h: In member function ‘void uS::Socket::sendTransformed(const char*, size_t, void (*)(void*, void*, bool, void*), void*, D)’:
+/usr/include/uWS/Socket.h:440:66: error: ‘nullptr’ was not declared in this scope
+                             callback(*this, callbackData, false, nullptr);
+                                                                  ^
+/usr/include/uWS/Socket.h:448:61: error: ‘nullptr’ was not declared in this scope
+                         callback(*this, callbackData, true, nullptr);
+                                                             ^
+/usr/include/uWS/Socket.h:460:66: error: ‘nullptr’ was not declared in this scope
+                             callback(*this, callbackData, false, nullptr);
+                                                                  ^
+/usr/include/uWS/Socket.h:468:61: error: ‘nullptr’ was not declared in this scope
+                         callback(*this, callbackData, true, nullptr);
+                                                             ^
+In file included from /usr/include/uWS/Group.h:4:0,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/WebSocket.h: At global scope:
+/usr/include/uWS/WebSocket.h:28:30: error: ‘nullptr’ was not declared in this scope
+     WebSocket(uS::Socket s = nullptr) : uS::Socket(s) {
+                              ^
+/usr/include/uWS/WebSocket.h:54:55: error: ‘nullptr’ was not declared in this scope
+     void close(int code = 1000, const char *message = nullptr, size_t length = 0);
+                                                       ^
+/usr/include/uWS/WebSocket.h:56:52: error: ‘OpCode’ is not a class or namespace
+     void send(const char *message, OpCode opCode = OpCode::TEXT) {send(message, strlen(message), opCode);}
+                                                    ^
+In file included from /usr/include/uWS/Group.h:4:0,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/WebSocket.h:57:145: error: ‘nullptr’ was not declared in this scope
+     void send(const char *message, size_t length, OpCode opCode, void(*callback)(void *webSocket, void *data, bool cancelled, void *reserved) = nullptr, void *callbackData = nullptr);
+                                                                                                                                                 ^
+/usr/include/uWS/WebSocket.h:57:175: error: ‘nullptr’ was not declared in this scope
+     void send(const char *message, size_t length, OpCode opCode, void(*callback)(void *webSocket, void *data, bool cancelled, void *reserved) = nullptr, void *callbackData = nullptr);
+                                                                                                                                                                               ^
+/usr/include/uWS/WebSocket.h:58:182: error: ‘nullptr’ was not declared in this scope
+     static PreparedMessage *prepareMessage(char *data, size_t length, OpCode opCode, bool compressed, void(*callback)(void *webSocket, void *data, bool cancelled, void *reserved) = nullptr);
+                                                                                                                                                                                      ^
+/usr/include/uWS/WebSocket.h:59:232: error: ‘nullptr’ was not declared in this scope
+     static PreparedMessage *prepareMessageBatch(std::vector<std::string> &messages, std::vector<int> &excludedMessages, OpCode opCode, bool compressed, void(*callback)(void *webSocket, void *data, bool cancelled, void *reserved) = nullptr);
+                                                                                                                                                                                                                                        ^
+/usr/include/uWS/WebSocket.h:60:78: error: ‘nullptr’ was not declared in this scope
+     void sendPrepared(PreparedMessage *preparedMessage, void *callbackData = nullptr);
+                                                                              ^
+In file included from /usr/include/uWS/Group.h:4:0,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/WebSocket.h: In constructor ‘uWS::WebSocket<isServer>::Data::Data(bool, uS::SocketData*)’:
+/usr/include/uWS/WebSocket.h:24:53: error: ‘CompressionStatus’ is not a class or namespace
+             compressionStatus = perMessageDeflate ? CompressionStatus::ENABLED : CompressionStatus::DISABLED;
+                                                     ^
+/usr/include/uWS/WebSocket.h:24:82: error: ‘CompressionStatus’ is not a class or namespace
+             compressionStatus = perMessageDeflate ? CompressionStatus::ENABLED : CompressionStatus::DISABLED;
+                                                                                  ^
+/usr/include/uWS/WebSocket.h: In member function ‘void uWS::WebSocket<isServer>::ping(const char*)’:
+/usr/include/uWS/WebSocket.h:55:51: error: ‘OpCode’ is not a class or namespace
+     void ping(const char *message) {send(message, OpCode::PING);}
+                                                   ^
+In file included from /usr/include/uWS/Group.h:4:0,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/WebSocket.h: At global scope:
+/usr/include/uWS/WebSocket.h:77:8: error: ‘hash’ is not a class template
+ struct hash<uWS::WebSocket<isServer>> {
+        ^
+/usr/include/uWS/WebSocket.h:77:36: error: template argument 1 is invalid
+ struct hash<uWS::WebSocket<isServer>> {
+                                    ^
+/usr/include/uWS/WebSocket.h: In member function ‘std::size_t std::hash<isServer>::operator()(const uWS::WebSocket<isServer>&) const’:
+/usr/include/uWS/WebSocket.h:80:37: error: type/value mismatch at argument 1 in template parameter list for ‘template<bool isServer> struct std::hash’
+         return std::hash<uv_poll_t *>()(webSocket.getPollHandle());
+                                     ^
+/usr/include/uWS/WebSocket.h:80:37: note:   expected a constant of type ‘bool’, got ‘uv_poll_t* {aka uv_poll_s*}’
+In file included from /usr/include/uWS/Group.h:5:0,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/HTTPSocket.h: At global scope:
+/usr/include/uWS/HTTPSocket.h:45:35: error: ‘nullptr’ was not declared in this scope
+     HttpRequest(Header *headers = nullptr) : headers(headers) {}
+                                   ^
+/usr/include/uWS/HTTPSocket.h: In member function ‘uWS::Header uWS::HttpRequest::getHeader(const char*, size_t)’:
+/usr/include/uWS/HTTPSocket.h:55:17: error: ‘nullptr’ was not declared in this scope
+         return {nullptr, nullptr, 0, 0};
+                 ^
+/usr/include/uWS/HTTPSocket.h:55:39: error: could not convert ‘{<expression error>, nullptr, 0, 0}’ from ‘<brace-enclosed initializer list>’ to ‘uWS::Header’
+         return {nullptr, nullptr, 0, 0};
+                                       ^
+/usr/include/uWS/HTTPSocket.h: In member function ‘uWS::Header uWS::HttpRequest::getUrl()’:
+/usr/include/uWS/HTTPSocket.h:62:17: error: ‘nullptr’ was not declared in this scope
+         return {nullptr, nullptr, 0, 0};
+                 ^
+/usr/include/uWS/HTTPSocket.h:62:39: error: could not convert ‘{<expression error>, nullptr, 0, 0}’ from ‘<brace-enclosed initializer list>’ to ‘uWS::Header’
+         return {nullptr, nullptr, 0, 0};
+                                       ^
+/usr/include/uWS/HTTPSocket.h: At global scope:
+/usr/include/uWS/HTTPSocket.h:118:50: error: ‘nullptr’ was not declared in this scope
+         HttpResponse *outstandingResponsesHead = nullptr;
+                                                  ^
+/usr/include/uWS/HTTPSocket.h:119:50: error: ‘nullptr’ was not declared in this scope
+         HttpResponse *outstandingResponsesTail = nullptr;
+                                                  ^
+/usr/include/uWS/HTTPSocket.h:120:46: error: ‘nullptr’ was not declared in this scope
+         HttpResponse *preAllocatedResponse = nullptr;
+                                              ^
+/usr/include/uWS/HTTPSocket.h:192:96: error: ‘nullptr’ was not declared in this scope
+                void(*callback)(void *httpSocket, void *data, bool cancelled, void *reserved) = nullptr,
+                                                                                                ^
+/usr/include/uWS/HTTPSocket.h:193:37: error: ‘nullptr’ was not declared in this scope
+                void *callbackData = nullptr) {
+                                     ^
+/usr/include/uWS/HTTPSocket.h:211:36: error: ‘nullptr’ was not declared in this scope
+     void end(const char *message = nullptr, size_t length = 0,
+                                    ^
+/usr/include/uWS/HTTPSocket.h:212:96: error: ‘nullptr’ was not declared in this scope
+              void(*callback)(void *httpResponse, void *data, bool cancelled, void *reserved) = nullptr,
+                                                                                                ^
+/usr/include/uWS/HTTPSocket.h:213:35: error: ‘nullptr’ was not declared in this scope
+              void *callbackData = nullptr) {
+                                   ^
+/usr/include/uWS/HTTPSocket.h:160:26: error: ‘nullptr’ was not declared in this scope
+     HttpResponse *next = nullptr;
+                          ^
+/usr/include/uWS/HTTPSocket.h:161:22: error: ‘nullptr’ was not declared in this scope
+     void *userData = nullptr;
+                      ^
+/usr/include/uWS/HTTPSocket.h:162:27: error: ‘nullptr’ was not declared in this scope
+     void *extraUserData = nullptr;
+                           ^
+/usr/include/uWS/HTTPSocket.h:163:52: error: ‘nullptr’ was not declared in this scope
+     uS::SocketData::Queue::Message *messageQueue = nullptr;
+                                                    ^
+/usr/include/uWS/HTTPSocket.h: In static member function ‘static uWS::HttpResponse* uWS::HttpResponse::allocateResponse(uWS::HttpSocket<isServer>, typename uWS::HttpSocket<isServer>::Data*)’:
+/usr/include/uWS/HTTPSocket.h:175:46: error: ‘nullptr’ was not declared in this scope
+             httpData->preAllocatedResponse = nullptr;
+                                              ^
+/usr/include/uWS/HTTPSocket.h: In member function ‘void uWS::HttpResponse::write(const char*, size_t, void (*)(void*, void*, bool, void*), void*)’:
+/usr/include/uWS/HTTPSocket.h:206:95: error: no matching function for call to ‘uWS::HttpSocket<true>::sendTransformed(const char*&, size_t&, void (*&)(void*, void*, bool, void*), void*&, int)’
+         httpSocket.sendTransformed<NoopTransformer>(message, length, callback, callbackData, 0);
+                                                                                               ^
+In file included from /usr/include/uWS/WebSocket.h:5:0,
+                 from /usr/include/uWS/Group.h:4,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Socket.h:423:10: note: candidate: template<class T, class D> void uS::Socket::sendTransformed(const char*, size_t, void (*)(void*, void*, bool, void*), void*, D)
+     void sendTransformed(const char *message, size_t length, void(*callback)(void *httpSocket, void *data, bool cancelled, void *reserved), void *callbackData, D transformData) {
+          ^
+/usr/include/uWS/Socket.h:423:10: note:   template argument deduction/substitution failed:
+In file included from /usr/include/uWS/Group.h:5:0,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/HTTPSocket.h: In substitution of ‘template<class T, class D> void uS::Socket::sendTransformed(const char*, size_t, void (*)(void*, void*, bool, void*), void*, D) [with T = uWS::HttpResponse::write(const char*, size_t, void (*)(void*, void*, bool, void*), void*)::NoopTransformer; D = int]’:
+/usr/include/uWS/HTTPSocket.h:206:95:   required from here
+/usr/include/uWS/HTTPSocket.h:206:95: error: template argument for ‘template<class T, class D> void uS::Socket::sendTransformed(const char*, size_t, void (*)(void*, void*, bool, void*), void*, D)’ uses local type ‘uWS::HttpResponse::write(const char*, size_t, void (*)(void*, void*, bool, void*), void*)::NoopTransformer’
+         httpSocket.sendTransformed<NoopTransformer>(message, length, callback, callbackData, 0);
+                                                                                               ^
+/usr/include/uWS/HTTPSocket.h:206:95: error:   trying to instantiate ‘template<class T, class D> void uS::Socket::sendTransformed(const char*, size_t, void (*)(void*, void*, bool, void*), void*, D)’
+/usr/include/uWS/HTTPSocket.h: In static member function ‘static size_t uWS::HttpResponse::end(const char*, size_t, void (*)(void*, void*, bool, void*), void*)::HttpTransformer::transform(const char*, char*, size_t, uWS::HttpResponse::end(const char*, size_t, void (*)(void*, void*, bool, void*), void*)::TransformData)’:
+/usr/include/uWS/HTTPSocket.h:228:58: error: ‘sprintf’ is not a member of ‘std’
+                 int offset = transformData.hasHead ? 0 : std::sprintf(dst, "HTTP/1.1 200 OK\r\nContent-Length: %u\r\n\r\n", (unsigned int) length);
+                                                          ^
+/usr/include/uWS/HTTPSocket.h:228:58: note: suggested alternative:
+In file included from /usr/include/uv.h:51:0,
+                 from /usr/include/uWS/uUV.h:5,
+                 from /usr/include/uWS/Networking.h:55,
+                 from /usr/include/uWS/WebSocketProtocol.h:5,
+                 from /usr/include/uWS/WebSocket.h:4,
+                 from /usr/include/uWS/Group.h:4,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/stdio.h:364:12: note:   ‘sprintf’
+ extern int sprintf (char *__restrict __s,
+            ^
+In file included from /usr/include/uWS/Group.h:5:0,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/HTTPSocket.h: In member function ‘void uWS::HttpResponse::end(const char*, size_t, void (*)(void*, void*, bool, void*), void*)’:
+/usr/include/uWS/HTTPSocket.h:243:111: error: no matching function for call to ‘uWS::HttpSocket<true>::sendTransformed(const char*&, size_t&, void (*&)(void*, void*, bool, void*), void*&, uWS::HttpResponse::end(const char*, size_t, void (*)(void*, void*, bool, void*), void*)::TransformData&)’
+             httpSocket.sendTransformed<HttpTransformer>(message, length, callback, callbackData, transformData);
+                                                                                                               ^
+In file included from /usr/include/uWS/WebSocket.h:5:0,
+                 from /usr/include/uWS/Group.h:4,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Socket.h:423:10: note: candidate: template<class T, class D> void uS::Socket::sendTransformed(const char*, size_t, void (*)(void*, void*, bool, void*), void*, D)
+     void sendTransformed(const char *message, size_t length, void(*callback)(void *httpSocket, void *data, bool cancelled, void *reserved), void *callbackData, D transformData) {
+          ^
+/usr/include/uWS/Socket.h:423:10: note:   template argument deduction/substitution failed:
+In file included from /usr/include/uWS/Group.h:5:0,
+                 from /usr/include/uWS/Hub.h:4,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/HTTPSocket.h: In substitution of ‘template<class T, class D> void uS::Socket::sendTransformed(const char*, size_t, void (*)(void*, void*, bool, void*), void*, D) [with T = uWS::HttpResponse::end(const char*, size_t, void (*)(void*, void*, bool, void*), void*)::HttpTransformer; D = uWS::HttpResponse::end(const char*, size_t, void (*)(void*, void*, bool, void*), void*)::TransformData]’:
+/usr/include/uWS/HTTPSocket.h:243:111:   required from here
+/usr/include/uWS/HTTPSocket.h:243:111: error: template argument for ‘template<class T, class D> void uS::Socket::sendTransformed(const char*, size_t, void (*)(void*, void*, bool, void*), void*, D)’ uses local type ‘uWS::HttpResponse::end(const char*, size_t, void (*)(void*, void*, bool, void*), void*)::HttpTransformer’
+             httpSocket.sendTransformed<HttpTransformer>(message, length, callback, callbackData, transformData);
+                                                                                                               ^
+/usr/include/uWS/HTTPSocket.h:243:111: error: template argument for ‘template<class T, class D> void uS::Socket::sendTransformed(const char*, size_t, void (*)(void*, void*, bool, void*), void*, D)’ uses local type ‘uWS::HttpResponse::end(const char*, size_t, void (*)(void*, void*, bool, void*), void*)::TransformData’
+/usr/include/uWS/HTTPSocket.h:243:111: error:   trying to instantiate ‘template<class T, class D> void uS::Socket::sendTransformed(const char*, size_t, void (*)(void*, void*, bool, void*), void*, D)’
+/usr/include/uWS/HTTPSocket.h:257:69: error: ‘nullptr’ was not declared in this scope
+                                 callback(this, callbackData, false, nullptr);
+                                                                     ^
+/usr/include/uWS/HTTPSocket.h:266:64: error: ‘nullptr’ was not declared in this scope
+                             callback(this, callbackData, true, nullptr);
+                                                                ^
+/usr/include/uWS/HTTPSocket.h:284:66: error: ‘nullptr’ was not declared in this scope
+                 httpSocket.getData()->outstandingResponsesTail = nullptr;
+                                                                  ^
+In file included from /usr/include/uWS/Hub.h:4:0,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Group.h: At global scope:
+/usr/include/uWS/Group.h:17:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(WebSocket<isServer>, HttpRequest)> connectionHandler;
+          ^
+/usr/include/uWS/Group.h:18:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(WebSocket<isServer>, char *message, size_t length, OpCode opCode)> messageHandler;
+          ^
+/usr/include/uWS/Group.h:19:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(WebSocket<isServer>, int code, char *message, size_t length)> disconnectionHandler;
+          ^
+/usr/include/uWS/Group.h:20:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(WebSocket<isServer>, char *, size_t)> pingHandler;
+          ^
+/usr/include/uWS/Group.h:21:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(WebSocket<isServer>, char *, size_t)> pongHandler;
+          ^
+/usr/include/uWS/Group.h:23:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(HttpSocket<isServer>)> httpConnectionHandler;
+          ^
+/usr/include/uWS/Group.h:24:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(HttpResponse *, HttpRequest, char *, size_t, size_t)> httpRequestHandler;
+          ^
+/usr/include/uWS/Group.h:25:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(HttpResponse *, char *, size_t, size_t)> httpDataHandler;
+          ^
+/usr/include/uWS/Group.h:26:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(HttpResponse *)> httpCancelledRequestHandler;
+          ^
+/usr/include/uWS/Group.h:28:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(HttpSocket<isServer>)> httpDisconnectionHandler;
+          ^
+/usr/include/uWS/Group.h:29:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(HttpSocket<isServer>, HttpRequest)> httpUpgradeHandler;
+          ^
+/usr/include/uWS/Group.h:31:11: error: expected nested-name-specifier before ‘errorType’
+     using errorType = typename std::conditional<isServer, int, void *>::type;
+           ^
+/usr/include/uWS/Group.h:32:10: error: ‘function’ in namespace ‘std’ does not name a template type
+     std::function<void(errorType)> errorHandler;
+          ^
+/usr/include/uWS/Group.h:62:28: error: ‘std::function’ has not been declared
+     void onConnection(std::function<void(WebSocket<isServer>, HttpRequest)> handler);
+                            ^
+/usr/include/uWS/Group.h:62:36: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onConnection(std::function<void(WebSocket<isServer>, HttpRequest)> handler);
+                                    ^
+/usr/include/uWS/Group.h:63:25: error: ‘std::function’ has not been declared
+     void onMessage(std::function<void(WebSocket<isServer>, char *, size_t, OpCode)> handler);
+                         ^
+/usr/include/uWS/Group.h:63:33: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onMessage(std::function<void(WebSocket<isServer>, char *, size_t, OpCode)> handler);
+                                 ^
+/usr/include/uWS/Group.h:64:31: error: ‘std::function’ has not been declared
+     void onDisconnection(std::function<void(WebSocket<isServer>, int code, char *message, size_t length)> handler);
+                               ^
+/usr/include/uWS/Group.h:64:39: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onDisconnection(std::function<void(WebSocket<isServer>, int code, char *message, size_t length)> handler);
+                                       ^
+/usr/include/uWS/Group.h:65:22: error: ‘std::function’ has not been declared
+     void onPing(std::function<void(WebSocket<isServer>, char *, size_t)> handler);
+                      ^
+/usr/include/uWS/Group.h:65:30: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onPing(std::function<void(WebSocket<isServer>, char *, size_t)> handler);
+                              ^
+/usr/include/uWS/Group.h:66:22: error: ‘std::function’ has not been declared
+     void onPong(std::function<void(WebSocket<isServer>, char *, size_t)> handler);
+                      ^
+/usr/include/uWS/Group.h:66:30: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onPong(std::function<void(WebSocket<isServer>, char *, size_t)> handler);
+                              ^
+/usr/include/uWS/Group.h:67:23: error: ‘std::function’ has not been declared
+     void onError(std::function<void(errorType)> handler);
+                       ^
+/usr/include/uWS/Group.h:67:31: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onError(std::function<void(errorType)> handler);
+                               ^
+/usr/include/uWS/Group.h:69:32: error: ‘std::function’ has not been declared
+     void onHttpConnection(std::function<void(HttpSocket<isServer>)> handler);
+                                ^
+/usr/include/uWS/Group.h:69:40: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onHttpConnection(std::function<void(HttpSocket<isServer>)> handler);
+                                        ^
+/usr/include/uWS/Group.h:70:29: error: ‘std::function’ has not been declared
+     void onHttpRequest(std::function<void(HttpResponse *, HttpRequest, char *data, size_t length, size_t remainingBytes)> handler);
+                             ^
+/usr/include/uWS/Group.h:70:37: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onHttpRequest(std::function<void(HttpResponse *, HttpRequest, char *data, size_t length, size_t remainingBytes)> handler);
+                                     ^
+In file included from /usr/include/uWS/Hub.h:4:0,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Group.h:71:26: error: ‘std::function’ has not been declared
+     void onHttpData(std::function<void(HttpResponse *, char *data, size_t length, size_t remainingBytes)> handler);
+                          ^
+/usr/include/uWS/Group.h:71:34: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onHttpData(std::function<void(HttpResponse *, char *data, size_t length, size_t remainingBytes)> handler);
+                                  ^
+/usr/include/uWS/Group.h:72:35: error: ‘std::function’ has not been declared
+     void onHttpDisconnection(std::function<void(HttpSocket<isServer>)> handler);
+                                   ^
+/usr/include/uWS/Group.h:72:43: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onHttpDisconnection(std::function<void(HttpSocket<isServer>)> handler);
+                                           ^
+/usr/include/uWS/Group.h:73:38: error: ‘std::function’ has not been declared
+     void onCancelledHttpRequest(std::function<void(HttpResponse *)> handler);
+                                      ^
+/usr/include/uWS/Group.h:73:46: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onCancelledHttpRequest(std::function<void(HttpResponse *)> handler);
+                                              ^
+/usr/include/uWS/Group.h:74:29: error: ‘std::function’ has not been declared
+     void onHttpUpgrade(std::function<void(HttpSocket<isServer>, HttpRequest)> handler);
+                             ^
+/usr/include/uWS/Group.h:74:37: error: expected ‘,’ or ‘...’ before ‘<’ token
+     void onHttpUpgrade(std::function<void(HttpSocket<isServer>, HttpRequest)> handler);
+                                     ^
+/usr/include/uWS/Group.h:79:49: error: ‘nullptr’ was not declared in this scope
+     void close(int code = 1000, char *message = nullptr, size_t length = 0);
+                                                 ^
+In file included from /usr/include/uWS/Hub.h:4:0,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Group.h:36:25: error: ‘nullptr’ was not declared in this scope
+     uv_timer_t *timer = nullptr;
+                         ^
+/usr/include/uWS/Group.h:40:22: error: ‘nullptr’ was not declared in this scope
+     void *userData = nullptr;
+                      ^
+/usr/include/uWS/Group.h:46:32: error: ‘nullptr’ was not declared in this scope
+     uv_poll_t *webSocketHead = nullptr, *httpSocketHead = nullptr;
+                                ^
+/usr/include/uWS/Group.h:46:59: error: ‘nullptr’ was not declared in this scope
+     uv_poll_t *webSocketHead = nullptr, *httpSocketHead = nullptr;
+                                                           ^
+/usr/include/uWS/Group.h:50:29: error: ‘nullptr’ was not declared in this scope
+     uv_timer_t *httpTimer = nullptr;
+                             ^
+In file included from /usr/include/uWS/Hub.h:5:0,
+                 from /usr/include/uWS/uWS.h:4,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Node.h:19:10: error: ‘mutex’ in namespace ‘std’ does not name a type
+     std::mutex asyncMutex;
+          ^
+/usr/include/uWS/Node.h: In member function ‘uS::Socket uS::Node::connect(const char*, int, bool, uS::SocketData*)’:
+/usr/include/uWS/Node.h:44:35: error: ‘to_string’ is not a member of ‘std’
+         if (getaddrinfo(hostname, std::to_string(port).c_str(), &hints, &result) != 0) {
+                                   ^
+/usr/include/uWS/Node.h:47:20: error: ‘nullptr’ was not declared in this scope
+             return nullptr;
+                    ^
+/usr/include/uWS/Node.h:54:20: error: ‘nullptr’ was not declared in this scope
+             return nullptr;
+                    ^
+/usr/include/uWS/Node.h:73:31: error: ‘nullptr’ was not declared in this scope
+             socketData->ssl = nullptr;
+                               ^
+/usr/include/uWS/Node.h: In static member function ‘static void uS::Node::accept_cb(uS::ListenData*)’:
+/usr/include/uWS/Node.h:97:50: error: ‘nullptr’ was not declared in this scope
+         uv_os_sock_t clientFd = accept(serverFd, nullptr, nullptr);
+                                                  ^
+/usr/include/uWS/Node.h: In member function ‘bool uS::Node::listen(const char*, int, uS::TLS::Context, int, uS::NodeData*, void*)’:
+/usr/include/uWS/Node.h:169:31: error: ‘to_string’ is not a member of ‘std’
+         if (getaddrinfo(host, std::to_string(port).c_str(), &hints, &result)) {
+                               ^
+/usr/include/uWS/Node.h:223:27: error: ‘nullptr’ was not declared in this scope
+         listenData->ssl = nullptr;
+                           ^
+In file included from /usr/include/uWS/uWS.h:4:0,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Hub.h: At global scope:
+/usr/include/uWS/Hub.h:10:15: error: expected constructor, destructor, or type conversion before ‘(’ token
+ static_assert (UV_VERSION_MINOR >= 3, "µWebSockets requires libuv >=1.3.0");
+               ^
+/usr/include/uWS/Hub.h:41:57: error: ‘nullptr’ was not declared in this scope
+     bool listen(int port, uS::TLS::Context sslContext = nullptr, int options = 0, Group<SERVER> *eh = nullptr);
+                                                         ^
+/usr/include/uWS/Hub.h:41:103: error: ‘nullptr’ was not declared in this scope
+     bool listen(int port, uS::TLS::Context sslContext = nullptr, int options = 0, Group<SERVER> *eh = nullptr);
+                                                                                                       ^
+/usr/include/uWS/Hub.h:42:75: error: ‘nullptr’ was not declared in this scope
+     bool listen(const char *host, int port, uS::TLS::Context sslContext = nullptr, int options = 0, Group<SERVER> *eh = nullptr);
+                                                                           ^
+/usr/include/uWS/Hub.h:42:121: error: ‘nullptr’ was not declared in this scope
+     bool listen(const char *host, int port, uS::TLS::Context sslContext = nullptr, int options = 0, Group<SERVER> *eh = nullptr);
+                                                                                                                         ^
+In file included from /usr/include/uWS/uWS.h:4:0,
+                 from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:1:
+/usr/include/uWS/Hub.h:43:89: error: ‘nullptr’ was not declared in this scope
+     void connect(std::string uri, void *user, int timeoutMs = 5000, Group<CLIENT> *eh = nullptr, std::string subprotocol = "");
+                                                                                         ^
+/usr/include/uWS/Hub.h:44:194: error: ‘nullptr’ was not declared in this scope
+     void upgrade(uv_os_sock_t fd, const char *secKey, SSL *ssl, const char *extensions, size_t extensionsLength, const char *subprotocol, size_t subprotocolLength, Group<SERVER> *serverGroup = nullptr);
+                                                                                                                                                                                                  ^
+In file included from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:3:0:
+/media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/json.hpp:149:1: warning: scoped enums only available with -std=c++11 or -std=gnu++11
+ enum class value_t : uint8_t
+ ^
+/media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/json.hpp:149:22: warning: scoped enums only available with -std=c++11 or -std=gnu++11
+ enum class value_t : uint8_t
+                      ^
+/media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/json.hpp:171:61: error: expected initializer before ‘noexcept’
+ inline bool operator<(const value_t lhs, const value_t rhs) noexcept
+                                                             ^
+In file included from /media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/main.cpp:3:0:
+/media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/json.hpp:12994:31: error: expected ‘}’ before end of line
+/media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/json.hpp:12994:31: error: expected ‘}’ before end of line
+/media/qing/linux/udacity/Self-drving Car_term2/Lesson_6_project/project/CarND-Extended-Kalman-Filter-Project-master/src/json.hpp:12994:31: error: expected declaration before end of line
