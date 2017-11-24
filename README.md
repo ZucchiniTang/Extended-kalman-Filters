@@ -1,8 +1,6 @@
-<h2># Extended-kalman-Filters <br />
-<br />
-<h3>code: inside the 'src'<br />
-       <p>--  'FusionEKF.h'       'FusionEKF.cpp'</p>
-       <p>--  'Kalman_filter.h'   'Kalman_filter.cpp'</p>
-       <p>--  'tools.h'           'tools.cpp'</p>
-<br />
-<h3>cmake file: inside the 'build'
+# Extended-kalman-Filters <br />
+1.  code: inside the 'src'
+    1. 'FusionEKF.h'       'FusionEKF.cpp'
+    2. 'Kalman_filter.h'   'Kalman_filter.cpp'
+    3. 'tools.h'           'tools.cpp'
+2.  cmake file: inside the 'build'
